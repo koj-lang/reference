@@ -1,4 +1,6 @@
 [book]
+title = "Koj language reference"
+description = "This site is the reference for the Koj programming language"
 authors = ["Tom Béné"]
 language = "en"
 multilingual = false
