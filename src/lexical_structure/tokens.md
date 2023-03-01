@@ -1,9 +1,4 @@
----
-title: 'Tokens'
-index: 8
----
-
-## Tokens
+# Tokens
 
 Tokens can be one of the following elements, described it the previous chapters :
 

@@ -1,9 +1,4 @@
----
-title: "Whitespace"
-index: 2
----
-
-## Whitespace
+# Whitespace
 
 The `koj` language uses the following whitespace characters:
 

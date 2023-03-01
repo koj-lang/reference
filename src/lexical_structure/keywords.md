@@ -1,9 +1,4 @@
----
-title: "Keywords"
-index: 4
----
-
-## Keywords
+# Keywords
 
 The following keywords are reserved by the `koj` language:
 

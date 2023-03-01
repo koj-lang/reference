@@ -1,13 +1,8 @@
----
-title: 'Literals'
-index: 6
----
-
-## Literals
+# Literals
 
 Literals are used to represent values in the source code. They are used to initialize variables, to pass arguments to functions, etc.
 
-### Integer literals
+## Integer literals
 
 Integer literals represent an integer value. They can be written in decimal, hexadecimal, octal or binary notation.
 
@@ -29,7 +24,7 @@ Integer literals represent an integer value. They can be written in decimal, hex
 >
 > DEC_DIGIT := [`0` - `9`]
 
-### Floating-point literals
+## Floating-point literals
 
 Floating-point literals represent a floating-point value. They can be written in decimal or hexadecimal notation.
 
@@ -40,11 +35,11 @@ Floating-point literals represent a floating-point value. They can be written in
 >
 > EXPONENT := (`e`|`E`) (`+`|`-`)? DECIMAL_LITERAL
 
-### String and character literals
+## String and character literals
 
 Character literals represent a single character. String literals represent a sequence of characters.
 
-#### Character literals
+### Character literals
 
 > CHAR_LITERAL : `'` ( ~[ `'` `\` `\n` `\r` `\t`] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE ) `'`
 >
@@ -54,6 +49,6 @@ Character literals represent a single character. String literals represent a seq
 >
 > UNICODE_ESCAPE : `\u{` HEX_DIGIT[1,6] `}`
 
-#### String literals
+### String literals
 
 > STRING_LITERAL : `"` ( ~[ `"` `\` `\n` `\r` `\t`] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE )* `"`

@@ -1,9 +1,4 @@
----
-title: "Punctuation"
-index: 7
----
-
-## Punctuation
+# Punctuation
 
 | Token Name | Symbol | Description           |
 | ---------- | ------ | --------------------- |
@@ -28,7 +23,7 @@ index: 7
 | PERCENT    | `%`    | Modulo                |
 | CARET      | `^`    | Bitwise XOR           |
 | AMP        | `&`    | Bitwise AND           |
-| PIPE       | `\|`   | Bitwise OR            |
+| PIPE       | `|`    | Bitwise OR            |
 | EQUAL      | `=`    | Assignement           |
 | LT         | `<`    | Less than             |
 | GT         | `>`    | Greater than          |
@@ -37,7 +32,7 @@ index: 7
 | GEQ        | `>=`   | Greater than or equal |
 | EQEQ       | `==`   | Equal equal           |
 | AND        | `&&`   | Logical and           |
-| OR         | `\|\|` | Logical or            |
+| OR         | `||`   | Logical or            |
 | ARROW      | `->`   | Function type         |
 | SHR        | `>>`   | Shift right           |
 | SHL        | `<<`   | Shift left            |

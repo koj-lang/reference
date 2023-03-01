@@ -1,9 +1,4 @@
----
-title: 'Comments'
-index: 3
----
-
-## Comments
+# Comments
 
 Comments are used to document the code and are ignored by the compiler.
 
@@ -14,6 +9,6 @@ There are two types of comments:
 
 > COMMENT := LINE_COMMENT | BLOCK_COMMENT
 >
-> LINE_COMMENT := `//`[^`\n`]*
+> LINE_COMMENT := `//`[\^`\n`]*
 >
-> BLOCK_COMMENT := `/``*`.*?`*``/`
+> BLOCK_COMMENT := `/` `*`.*?`*` `/`
