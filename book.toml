@@ -3,3 +3,6 @@ authors = ["Tom Béné"]
 language = "en"
 multilingual = false
 src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/koj-lang/reference"
