@@ -13,3 +13,6 @@
   - [Literals](lexical_structure/literals.md)
   - [Punctuation](lexical_structure/punctuation.md)
   - [Tokens](lexical_structure/tokens.md)
+- [Grammatical Structure](grammatical_structure/index.md)
+  - [Declarations](grammatical_structure/declarations.md)
+    - [Type Declarations](grammatical_structure/type_decls.md)
