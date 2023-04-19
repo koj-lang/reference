@@ -22,3 +22,4 @@
   - [Function Types](type_system/function.md)
   - [Struct Types](type_system/struct.md)
   - [Enum Types](type_system/enum.md)
+  - [Inferred Type](type_system/inferred.md)

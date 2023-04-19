@@ -7,4 +7,5 @@
 > &nbsp;&nbsp;&nbsp;&nbsp; | [_ArrayType_](/type_system/array.md) \
 > &nbsp;&nbsp;&nbsp;&nbsp; | [_FunctionType_](/type_system/function.md) \
 > &nbsp;&nbsp;&nbsp;&nbsp; | [_Struct_](/type_system/struct.md) \
-> &nbsp;&nbsp;&nbsp;&nbsp; | [_Enum_](/type_system/enum.md)
+> &nbsp;&nbsp;&nbsp;&nbsp; | [_Enum_](/type_system/enum.md) \
+> &nbsp;&nbsp;&nbsp;&nbsp; | [_InferredType_](/type_system/inferred.md)
