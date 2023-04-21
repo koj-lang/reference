@@ -24,6 +24,6 @@ To represent a user on a website, you could use the following enum:
 ```
 enum {
  `Anon,
-  `LoggedIn(struct { id: string, role: string }),
+ `LoggedIn(struct { id: string, role: string }),
 }
 ```
