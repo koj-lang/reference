@@ -10,19 +10,19 @@ Integer literals represent an integer value. They can be written in decimal, hex
 >
 > DECIMAL_LITERAL := DEC_DIGIT*
 >
-> HEXADECIMAL_LITERAL := `0x`DEC_DIGIT+
+> HEXADECIMAL_LITERAL := ( `0x` | `0X` )DEC_DIGIT+
 >
-> OCTAL_LITERAL := `0o`OCT_DIGIT+
+> OCTAL_LITERAL := ( `0o` | `0O` )OCT_DIGIT+
 >
-> BINARY_LITERAL := `0b`BIN_DIGIT+
+> BINARY_LITERAL := ( `0b` | `0B` )BIN_DIGIT+
 >
-> BIN_DIGIT := [`0` - `1`]
+> BIN_DIGIT := [ `0` - `1` ]
 >
-> OCT_DIGIT := [`0` - `7`]
+> OCT_DIGIT := [ `0` - `7` ]
 >
-> HEX_DIGIT := [`0` - `9` `a` - `f` `A` - `F`]
+> HEX_DIGIT := [ `0` - `9` `a` - `f` `A` - `F` ]
 >
-> DEC_DIGIT := [`0` - `9`]
+> DEC_DIGIT := [ `0` - `9` ]
 
 ## Floating-point literals
 
@@ -31,9 +31,9 @@ Floating-point literals represent a floating-point value. They can be written in
 > FLOATING_LITERAL :=
 > | DECIMAL_LITERAL `.` DECIMAL_LITERAL?
 > | `.` DECIMAL_LITERAL
-> | DECIMAL_LITERAL (`.` DECIMAL_LITERAL)? EXPONENT
+> | DECIMAL_LITERAL ( `.` DECIMAL_LITERAL )? EXPONENT
 >
-> EXPONENT := (`e`|`E`) (`+`|`-`)? DECIMAL_LITERAL
+> EXPONENT := ( `e`|`E` ) ( `+`|`-` )? DECIMAL_LITERAL
 
 ## String and character literals
 
@@ -41,7 +41,7 @@ Character literals represent a single character. String literals represent a seq
 
 ### Character literals
 
-> CHAR_LITERAL : `'` ( ~[ `'` `\` `\n` `\r` `\t`] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE ) `'`
+> CHAR_LITERAL : `'` ( ~[ `'` `\` `\n` `\r` `\t` ] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE ) `'`
 >
 > QUOTE_ESCAPE : `\'` `\"`
 >
@@ -51,4 +51,4 @@ Character literals represent a single character. String literals represent a seq
 
 ### String literals
 
-> STRING_LITERAL : `"` ( ~[ `"` `\` `\n` `\r` `\t`] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE )* `"`
+> STRING_LITERAL : `"` ( ~[ `"` `\` `\n` `\r` `\t` ] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE )* `"`
