@@ -264,13 +264,13 @@
 <blockquote>
 <p>INTEGER_LITERAL := DECIMAL_LITERAL | HEXADECIMAL_LITERAL | OCTAL_LITERAL | BINARY_LITERAL</p>
 <p>DECIMAL_LITERAL := DEC_DIGIT*</p>
-<p>HEXADECIMAL_LITERAL := <code>0x</code>DEC_DIGIT+</p>
-<p>OCTAL_LITERAL := <code>0o</code>OCT_DIGIT+</p>
-<p>BINARY_LITERAL := <code>0b</code>BIN_DIGIT+</p>
-<p>BIN_DIGIT := [<code>0</code> - <code>1</code>]</p>
-<p>OCT_DIGIT := [<code>0</code> - <code>7</code>]</p>
-<p>HEX_DIGIT := [<code>0</code> - <code>9</code> <code>a</code> - <code>f</code> <code>A</code> - <code>F</code>]</p>
-<p>DEC_DIGIT := [<code>0</code> - <code>9</code>]</p>
+<p>HEXADECIMAL_LITERAL := ( <code>0x</code> | <code>0X</code> )DEC_DIGIT+</p>
+<p>OCTAL_LITERAL := ( <code>0o</code> | <code>0O</code> )OCT_DIGIT+</p>
+<p>BINARY_LITERAL := ( <code>0b</code> | <code>0B</code> )BIN_DIGIT+</p>
+<p>BIN_DIGIT := [ <code>0</code> - <code>1</code> ]</p>
+<p>OCT_DIGIT := [ <code>0</code> - <code>7</code> ]</p>
+<p>HEX_DIGIT := [ <code>0</code> - <code>9</code> <code>a</code> - <code>f</code> <code>A</code> - <code>F</code> ]</p>
+<p>DEC_DIGIT := [ <code>0</code> - <code>9</code> ]</p>
 </blockquote>
 <h2 id="floating-point-literals"><a class="header" href="#floating-point-literals">Floating-point literals</a></h2>
 <p>Floating-point literals represent a floating-point value. They can be written in decimal or hexadecimal notation.</p>
@@ -278,21 +278,21 @@
 <p>FLOATING_LITERAL :=
 | DECIMAL_LITERAL <code>.</code> DECIMAL_LITERAL?
 | <code>.</code> DECIMAL_LITERAL
-| DECIMAL_LITERAL (<code>.</code> DECIMAL_LITERAL)? EXPONENT</p>
-<p>EXPONENT := (<code>e</code>|<code>E</code>) (<code>+</code>|<code>-</code>)? DECIMAL_LITERAL</p>
+| DECIMAL_LITERAL ( <code>.</code> DECIMAL_LITERAL )? EXPONENT</p>
+<p>EXPONENT := ( <code>e</code>|<code>E</code> ) ( <code>+</code>|<code>-</code> )? DECIMAL_LITERAL</p>
 </blockquote>
 <h2 id="string-and-character-literals"><a class="header" href="#string-and-character-literals">String and character literals</a></h2>
 <p>Character literals represent a single character. String literals represent a sequence of characters.</p>
 <h3 id="character-literals"><a class="header" href="#character-literals">Character literals</a></h3>
 <blockquote>
-<p>CHAR_LITERAL : <code>'</code> ( ~[ <code>'</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code>] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE ) <code>'</code></p>
+<p>CHAR_LITERAL : <code>'</code> ( ~[ <code>'</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code> ] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE ) <code>'</code></p>
 <p>QUOTE_ESCAPE : <code>\'</code> <code>\&quot;</code></p>
 <p>ASCII_ESCAPE : <code>\x</code> OCT_DIGIT HEX_DIGIT | <code>\n</code> | <code>\r</code> | <code>\t</code> | <code>\\</code> | <code>\0</code></p>
 <p>UNICODE_ESCAPE : <code>\u{</code> HEX_DIGIT[1,6] <code>}</code></p>
 </blockquote>
 <h3 id="string-literals"><a class="header" href="#string-literals">String literals</a></h3>
 <blockquote>
-<p>STRING_LITERAL : <code>&quot;</code> ( ~[ <code>&quot;</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code>] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE )* <code>&quot;</code></p>
+<p>STRING_LITERAL : <code>&quot;</code> ( ~[ <code>&quot;</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code> ] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE )* <code>&quot;</code></p>
 </blockquote>
 <div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="punctuation"><a class="header" href="#punctuation">Punctuation</a></h1>
 <table><thead><tr><th>Token Name</th><th>Symbol</th><th>Description</th></tr></thead><tbody>
@@ -435,6 +435,10 @@
 <h2 id="string-type"><a class="header" href="#string-type">String type</a></h2>
 <p>This type represents a text string. It is represented by the identifier <code>String</code>.</p>
 <p>For more info on these types, see <a href="type_system//lexical_structure/literals.html">literals</a></p>
+<h2 id="unit-type"><a class="header" href="#unit-type">Unit type</a></h2>
+<p>This type represents the return type of a function returning no actual value. It is represented by the identifier <code>Unit</code>, and its only possible value is <code>()</code>.</p>
+<h2 id="never-type"><a class="header" href="#never-type">Never type</a></h2>
+<p>This type is a type that has no value. It is represented by the identifier <code>Never</code>. It is used to type computations that do not return any value.</p>
 <div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="array-types"><a class="header" href="#array-types">Array Types</a></h1>
 <blockquote>
 <p><strong><sup>Syntax</sup></strong><br />
