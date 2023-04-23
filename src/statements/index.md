@@ -15,3 +15,4 @@
 
 Expression statements are used to evaluate an expression and discard the result. They are used to trigger the side effects of evaluating the expression.
 
+All statements evaluate to the [`Unit` type](/type_system/primitives.md#unit-type).
