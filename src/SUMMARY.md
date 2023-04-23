@@ -20,6 +20,7 @@
 - [Type System](type_system/index.md)
   - [Primitive Types](type_system/primitives.md)
   - [Array Types](type_system/array.md)
+  - [Tuple Types](type_system/tuple.md)
   - [Function Types](type_system/function.md)
   - [Struct Types](type_system/struct.md)
   - [Enum Types](type_system/enum.md)
