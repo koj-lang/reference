@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">The language</li><li class="chapter-item expanded "><a href="lexical_structure/index.html"><strong aria-hidden="true">1.</strong> Lexical Structure</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="lexical_structure/input_format.html"><strong aria-hidden="true">1.1.</strong> Input Format</a></li><li class="chapter-item expanded "><a href="lexical_structure/whitespace.html"><strong aria-hidden="true">1.2.</strong> Whitespace</a></li><li class="chapter-item expanded "><a href="lexical_structure/comments.html"><strong aria-hidden="true">1.3.</strong> Comments</a></li><li class="chapter-item expanded "><a href="lexical_structure/keywords.html"><strong aria-hidden="true">1.4.</strong> Keywords</a></li><li class="chapter-item expanded "><a href="lexical_structure/identifiers.html"><strong aria-hidden="true">1.5.</strong> Identifiers</a></li><li class="chapter-item expanded "><a href="lexical_structure/literals.html"><strong aria-hidden="true">1.6.</strong> Literals</a></li><li class="chapter-item expanded "><a href="lexical_structure/punctuation.html"><strong aria-hidden="true">1.7.</strong> Punctuation</a></li><li class="chapter-item expanded "><a href="lexical_structure/tokens.html"><strong aria-hidden="true">1.8.</strong> Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="statements-expressions.html"><strong aria-hidden="true">2.</strong> Statements and Expressions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="statements/index.html"><strong aria-hidden="true">2.1.</strong> Statements</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="statements/type_defs.html"><strong aria-hidden="true">2.1.1.</strong> Type Definitions</a></li><li class="chapter-item expanded "><a href="statements/declarations.html"><strong aria-hidden="true">2.1.2.</strong> Declarations</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="type_system/index.html"><strong aria-hidden="true">3.</strong> Type System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="type_system/primitives.html"><strong aria-hidden="true">3.1.</strong> Primitive Types</a></li><li class="chapter-item expanded "><a href="type_system/array.html"><strong aria-hidden="true">3.2.</strong> Array Types</a></li><li class="chapter-item expanded "><a href="type_system/function.html"><strong aria-hidden="true">3.3.</strong> Function Types</a></li><li class="chapter-item expanded "><a href="type_system/struct.html"><strong aria-hidden="true">3.4.</strong> Struct Types</a></li><li class="chapter-item expanded "><a href="type_system/enum.html"><strong aria-hidden="true">3.5.</strong> Enum Types</a></li><li class="chapter-item expanded "><a href="type_system/inferred.html"><strong aria-hidden="true">3.6.</strong> Inferred Type</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">The language</li><li class="chapter-item expanded "><a href="lexical_structure/index.html"><strong aria-hidden="true">1.</strong> Lexical Structure</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="lexical_structure/input_format.html"><strong aria-hidden="true">1.1.</strong> Input Format</a></li><li class="chapter-item expanded "><a href="lexical_structure/whitespace.html"><strong aria-hidden="true">1.2.</strong> Whitespace</a></li><li class="chapter-item expanded "><a href="lexical_structure/comments.html"><strong aria-hidden="true">1.3.</strong> Comments</a></li><li class="chapter-item expanded "><a href="lexical_structure/keywords.html"><strong aria-hidden="true">1.4.</strong> Keywords</a></li><li class="chapter-item expanded "><a href="lexical_structure/identifiers.html"><strong aria-hidden="true">1.5.</strong> Identifiers</a></li><li class="chapter-item expanded "><a href="lexical_structure/literals.html"><strong aria-hidden="true">1.6.</strong> Literals</a></li><li class="chapter-item expanded "><a href="lexical_structure/punctuation.html"><strong aria-hidden="true">1.7.</strong> Punctuation</a></li><li class="chapter-item expanded "><a href="lexical_structure/tokens.html"><strong aria-hidden="true">1.8.</strong> Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="statements-expressions.html"><strong aria-hidden="true">2.</strong> Statements and Expressions</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="statements/index.html"><strong aria-hidden="true">2.1.</strong> Statements</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="statements/type_defs.html"><strong aria-hidden="true">2.1.1.</strong> Type Definitions</a></li><li class="chapter-item expanded "><a href="statements/declarations.html"><strong aria-hidden="true">2.1.2.</strong> Declarations</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="type_system/index.html"><strong aria-hidden="true">3.</strong> Type System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="type_system/primitives.html"><strong aria-hidden="true">3.1.</strong> Primitive Types</a></li><li class="chapter-item expanded "><a href="type_system/array.html"><strong aria-hidden="true">3.2.</strong> Array Types</a></li><li class="chapter-item expanded "><a href="type_system/tuple.html"><strong aria-hidden="true">3.3.</strong> Tuple Types</a></li><li class="chapter-item expanded "><a href="type_system/function.html"><strong aria-hidden="true">3.4.</strong> Function Types</a></li><li class="chapter-item expanded "><a href="type_system/struct.html"><strong aria-hidden="true">3.5.</strong> Struct Types</a></li><li class="chapter-item expanded "><a href="type_system/enum.html"><strong aria-hidden="true">3.6.</strong> Enum Types</a></li><li class="chapter-item expanded "><a href="type_system/inferred.html"><strong aria-hidden="true">3.7.</strong> Inferred Type</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -262,37 +262,51 @@
 <h2 id="integer-literals"><a class="header" href="#integer-literals">Integer literals</a></h2>
 <p>Integer literals represent an integer value. They can be written in decimal, hexadecimal, octal or binary notation.</p>
 <blockquote>
-<p>INTEGER_LITERAL := DECIMAL_LITERAL | HEXADECIMAL_LITERAL | OCTAL_LITERAL | BINARY_LITERAL</p>
-<p>DECIMAL_LITERAL := DEC_DIGIT*</p>
-<p>HEXADECIMAL_LITERAL := ( <code>0x</code> | <code>0X</code> )DEC_DIGIT+</p>
-<p>OCTAL_LITERAL := ( <code>0o</code> | <code>0O</code> )OCT_DIGIT+</p>
-<p>BINARY_LITERAL := ( <code>0b</code> | <code>0B</code> )BIN_DIGIT+</p>
-<p>BIN_DIGIT := [ <code>0</code> - <code>1</code> ]</p>
-<p>OCT_DIGIT := [ <code>0</code> - <code>7</code> ]</p>
-<p>HEX_DIGIT := [ <code>0</code> - <code>9</code> <code>a</code> - <code>f</code> <code>A</code> - <code>F</code> ]</p>
-<p>DEC_DIGIT := [ <code>0</code> - <code>9</code> ]</p>
+<p>INTEGER_LITERAL :<br />
+     DECIMAL_LITERAL<br />
+     | HEXADECIMAL_LITERAL<br />
+     | OCTAL_LITERAL<br />
+     | BINARY_LITERAL</p>
+<p>DECIMAL_LITERAL : DEC_DIGIT<sup>*</sup></p>
+<p>HEXADECIMAL_LITERAL : ( <code>0x</code> | <code>0X</code> )DEC_DIGIT<sup>+</sup></p>
+<p>OCTAL_LITERAL : ( <code>0o</code> | <code>0O</code> )OCT_DIGIT<sup>+</sup></p>
+<p>BINARY_LITERAL : ( <code>0b</code> | <code>0B</code> )BIN_DIGIT<sup>+</sup></p>
+<p>BIN_DIGIT : [ <code>0</code> - <code>1</code> ]</p>
+<p>OCT_DIGIT : [ <code>0</code> - <code>7</code> ]</p>
+<p>HEX_DIGIT : [ <code>0</code> - <code>9</code> <code>a</code> - <code>f</code> <code>A</code> - <code>F</code> ]</p>
+<p>DEC_DIGIT : [ <code>0</code> - <code>9</code> ]</p>
 </blockquote>
 <h2 id="floating-point-literals"><a class="header" href="#floating-point-literals">Floating-point literals</a></h2>
 <p>Floating-point literals represent a floating-point value. They can be written in decimal or hexadecimal notation.</p>
 <blockquote>
-<p>FLOATING_LITERAL :=
-| DECIMAL_LITERAL <code>.</code> DECIMAL_LITERAL?
-| <code>.</code> DECIMAL_LITERAL
-| DECIMAL_LITERAL ( <code>.</code> DECIMAL_LITERAL )? EXPONENT</p>
-<p>EXPONENT := ( <code>e</code>|<code>E</code> ) ( <code>+</code>|<code>-</code> )? DECIMAL_LITERAL</p>
+<p>FLOATING_LITERAL :<br />
+     | DECIMAL_LITERAL <code>.</code> DECIMAL_LITERAL<sup>?</sup><br />
+     | <code>.</code> DECIMAL_LITERAL<br />
+     | DECIMAL_LITERAL ( <code>.</code> DECIMAL_LITERAL )<sup>?</sup> EXPONENT</p>
+<p>EXPONENT := ( <code>e</code>|<code>E</code> ) ( <code>+</code>|<code>-</code> )<sup>?</sup> DECIMAL_LITERAL</p>
 </blockquote>
 <h2 id="string-and-character-literals"><a class="header" href="#string-and-character-literals">String and character literals</a></h2>
 <p>Character literals represent a single character. String literals represent a sequence of characters.</p>
 <h3 id="character-literals"><a class="header" href="#character-literals">Character literals</a></h3>
 <blockquote>
-<p>CHAR_LITERAL : <code>'</code> ( ~[ <code>'</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code> ] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE ) <code>'</code></p>
+<p>CHAR_LITERAL : <code>'</code> CHAR_FRAGMENT<sup>?</sup> <code>'</code></p>
+<p>CHAR_FRAGMENT :<br />
+     ~[ <code>'</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code> ]<br />
+     | QUOTE_ESCAPE<br />
+     | ASCII_ESCAPE<br />
+     | UNICODE_ESCAPE </p>
 <p>QUOTE_ESCAPE : <code>\'</code> <code>\&quot;</code></p>
 <p>ASCII_ESCAPE : <code>\x</code> OCT_DIGIT HEX_DIGIT | <code>\n</code> | <code>\r</code> | <code>\t</code> | <code>\\</code> | <code>\0</code></p>
-<p>UNICODE_ESCAPE : <code>\u{</code> HEX_DIGIT[1,6] <code>}</code></p>
+<p>UNICODE_ESCAPE : <code>\u{</code> HEX_DIGIT<sup>[1,6]</sup> <code>}</code></p>
 </blockquote>
 <h3 id="string-literals"><a class="header" href="#string-literals">String literals</a></h3>
 <blockquote>
-<p>STRING_LITERAL : <code>&quot;</code> ( ~[ <code>&quot;</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code> ] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE )* <code>&quot;</code></p>
+<p>STRING_LITERAL : <code>&quot;</code> STRING_FRAGMENT<sup>*</sup> <code>&quot;</code></p>
+<p>STRING_FRAGMENT :<br />
+     ~[ <code>&quot;</code> <code>\</code> <code>\n</code> <code>\r</code> <code>\t</code> ]<br />
+     | QUOTE_ESCAPE<br />
+     | ASCII_ESCAPE<br />
+     | UNICODE_ESCAPE</p>
 </blockquote>
 <div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="punctuation"><a class="header" href="#punctuation">Punctuation</a></h1>
 <table><thead><tr><th>Token Name</th><th>Symbol</th><th>Description</th></tr></thead><tbody>
@@ -370,6 +384,7 @@
      <em>Expression</em> <code>;</code></p>
 </blockquote>
 <p>Expression statements are used to evaluate an expression and discard the result. They are used to trigger the side effects of evaluating the expression.</p>
+<p>All statements evaluate to the <a href="statements//type_system/primitives.html#unit-type"><code>Unit</code> type</a>.</p>
 <div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="type-definitions"><a class="header" href="#type-definitions">Type Definitions</a></h1>
 <blockquote>
 <p><strong><sup>Syntax</sup></strong><br />
@@ -446,6 +461,13 @@
      <code>[</code> <a href="type_system//type_system/index.html"><em>Type</em></a> <code>]</code></p>
 </blockquote>
 <p>Array types represent a sequence of elements of the same type. They are dinamically sized.</p>
+<div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="tuple-types"><a class="header" href="#tuple-types">Tuple Types</a></h1>
+<blockquote>
+<p><strong><sup>Syntax</sup></strong><br />
+<em>TupleType</em> :<br />
+     <code>(</code> <a href="type_system//type_system/index.html"><em>Type</em></a> ( <code>,</code> <a href="type_system//type_system/index.html"><em>Type</em></a> )<sup>*</sup> <code>)</code></p>
+</blockquote>
+<p>Tuple types represent lists of heterogeneous types. The order of the fields matter, so the type <code>(String, Int)</code> is different from the type <code>(Int, String)</code>.</p>
 <div id="chapter_begin" style="break-before: page; page-break-before: always;"></div><h1 id="function-types"><a class="header" href="#function-types">Function Types</a></h1>
 <blockquote>
 <p><strong><sup>Syntax</sup></strong><br />
